@@ -1,7 +1,7 @@
 {
   "id": "theme-cyberpunk-edgerunners",
   "name": "Cyberpunk: Edgerunners",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiVersion": 26,
   "entry": "plugin.js",
   "description": "Tres temas de Cyberpunk: Edgerunners para Kino: Night City, Arasaka y Netrunner. Colores neón, bordes, degradados, glow y logos propios.",
