@@ -1,10 +1,16 @@
 {
-  "id": "theme-cyberpunk-edgerunners",
-  "name": "Cyberpunk: Edgerunners",
-  "version": "1.0.2",
+  "id": "cyberpunk-edgerunners-theme",
+  "name": {
+    "es": "Cyberpunk: Edgerunners (Kino TV)",
+    "en": "Cyberpunk: Edgerunners (Kino TV)"
+  },
+  "version": "1.0.0",
   "apiVersion": 26,
   "entry": "plugin.js",
-  "description": "Tres temas de Cyberpunk: Edgerunners para Kino: Night City, Arasaka y Netrunner. Colores neón, bordes, degradados, glow y logos propios.",
+  "description": {
+    "es": "3 temas de Cyberpunk: Edgerunners para Kino TV: Night City, Arasaka y Netrunner, con logos, bordes y personalizaciÃ³n.",
+    "en": "3 Cyberpunk: Edgerunners themes for Kino TV: Night City, Arasaka, and Netrunner, with custom logos, borders, and full customization."
+  },
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
@@ -12,241 +18,160 @@
       "id": "night-city",
       "name": { "es": "Night City", "en": "Night City" },
       "colors": {
-        "accent": "#FCEE0A",
+        "accent": "#FEE101",
         "onAccent": "#000000",
-        "background": "#0A0A0F",
-        "surface": "#14141C",
-        "surfaceHigh": "#1E1E2A",
-        "textPrimary": "#F5F5F5",
-        "textSecondary": "#B3B3B3",
-        "focus": "#00F0FF",
-        "onFocus": "#000000",
-        "outline": "#2A2A3A",
-        "railPanel": "#101018",
-        "border": "#FCEE0A",
-        "success": "#00F0A0",
-        "warning": "#FCEE0A",
-        "error": "#FF003C",
-        "favorite": "#FF00A0"
+        "background": "#0A0A0A",
+        "surface": "#1A1A1A",
+        "surfaceHigh": "#2A2A2A",
+        "railPanel": "#141414",
+        "textPrimary": "#FFFFFF",
+        "textSecondary": "#BBBBBB",
+        "border": "#00C2FF"
       },
-      "background": { "type": "gradient", "colors": ["#0A0A0F", "#1A1200", "#001A1E"], "angle": 160 },
-      "shape": {
-        "cardRadius": 12, "channelRadius": 12, "buttonRadius": 6, "chipRadius": 4,
-        "dialogRadius": 16, "inputRadius": 8, "heroRadius": 18, "railItemRadius": 8,
-        "dialogBorder": 2, "menuBorder": 1, "headerBorder": 1, "cardBorder": 1, "panelBorder": 1
-      },
-      "typography": { "scale": 1.05, "titleScale": 1.05, "bodyScale": 1.0 },
-      "elevation": { "cardShadow": 0.5, "dialogShadow": 0.7, "heroScrim": 0.7 },
-      "motion": { "focusZoom": 1.08, "crossfadeMs": 220, "heroDrift": "on" },
-      "player": { "buttonScale": 1.05, "playButtonScale": 1.15, "seekBarScale": 1.2, "labelScale": 1.0, "buttonShape": "rounded" },
-      "style": { "gloss": 0.4 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": { "fill": { "type": "gradient", "colors": ["#FCEE0A", "#C7B800"], "angle": 180 }, "stroke": { "width": 1, "color": "#FFF176" }, "glow": { "color": "#FCEE0A", "radius": 12, "alpha": 0.5 } },
-        "buttonGhost": { "fill": { "type": "solid", "color": "#1E1E2A" }, "stroke": { "width": 1, "color": "#FCEE0A" } },
-        "navActive": { "fill": { "type": "solid", "color": "#1A1200" }, "stroke": { "width": 1.5, "color": "#FCEE0A" }, "glow": { "color": "#FCEE0A", "radius": 10, "alpha": 0.5 } },
-        "cardFocus": { "stroke": { "width": 2, "color": "#00F0FF" }, "glow": { "color": "#00F0FF", "radius": 14, "alpha": 0.5 } },
-        "card": { "glow": { "color": "#FCEE0A", "radius": 8, "alpha": 0.18 } },
-        "focus": { "stroke": { "width": 2, "color": "#00F0FF" }, "glow": { "color": "#00F0FF", "radius": 10, "alpha": 0.45 } },
-        "progress": { "fill": { "type": "gradient", "colors": ["#FCEE0A", "#00F0FF"], "angle": 0 } }
+      "background": {
+        "type": "gradient",
+        "colors": ["#0A0A0A", "#1A002A"],
+        "angle": 180
       },
       "logo": {
-        "wordmark": {
-          "size": [160, 32],
-          "paths": [
-            { "d": "M0 4 H30 L18 28 H6 Z", "fill": "accent" },
-            { "d": "M40 6 H52 V26 H40 Z", "fill": "textPrimary" },
-            { "d": "M58 6 H70 V26 H58 Z", "fill": "accent" },
-            { "d": "M76 6 H88 V26 H76 Z", "fill": "textPrimary" },
-            { "d": "M94 6 H106 V26 H94 Z", "fill": "accent" }
-          ]
-        },
-        "mark": {
-          "size": [32, 32],
-          "paths": [
-            { "d": "M16 0 L32 16 L16 32 L0 16 Z", "fill": "accent" },
-            { "d": "M16 8 L24 16 L16 24 L8 16 Z", "fill": "#0A0A0F" }
-          ]
-        }
+        "wordmark": "<svg viewBox=\"0 0 100 20\"><text x=\"0\" y=\"15\" font-family=\"'Cyberpunk', sans-serif\" font-size=\"14\" fill=\"#FEE101\">NIGHT CITY</text></svg>",
+        "mark": "<svg viewBox=\"0 0 20 20\"><circle cx=\"10\" cy=\"10\" r=\"8\" fill=\"#FEE101\"/></svg>",
+        "decor": "<svg viewBox=\"0 0 20 20\"><path d=\"M10 0 L20 10 L10 20 L0 10 Z\" fill=\"#00C2FF\"/></svg>"
+      },
+      "shape": {
+        "cardRadius": 8,
+        "channelRadius": 32,
+        "buttonRadius": 20,
+        "labelRadius": 8,
+        "dialogRadius": 20,
+        "fieldRadius": 12,
+        "cardBorder": 2,
+        "menuBorder": 1,
+        "lineBorder": 1,
+        "panelBorder": 1
+      },
+      "typography": {
+        "textScale": 1.05,
+        "titleScale": 1.1,
+        "bodyScale": 1.0
+      },
+      "elevation": {
+        "cardElevation": 0.4,
+        "heroScrim": 0.8,
+        "dialogElevation": 0.6
+      },
+      "motion": {
+        "focusZoom": 1.08,
+        "fadeMs": 250,
+        "heroDrift": true
+      },
+      "player": {
+        "buttonScale": 1.1,
+        "playButtonScale": 1.2,
+        "seekBarScale": 1.1,
+        "labelScale": 1.0,
+        "buttonShape": "rounded"
       },
       "adjustable": {
-        "colors.accent": { "swatches": ["#FCEE0A", "#00F0FF", "#FF00A0", "#7C4DFF", "#00F0A0"] },
-        "colors.focus": { "swatches": ["#00F0FF", "#FCEE0A", "#FF00A0", "#FFFFFF"] },
-        "colors.border": { "swatches": ["#FCEE0A", "#00F0FF", "#FF00A0", "#7C4DFF"] },
-        "shape.cardRadius": { "min": 0, "max": 32 },
-        "shape.buttonRadius": { "min": 0, "max": 32 },
-        "shape.dialogRadius": { "min": 0, "max": 32 },
-        "shape.cardBorder": { "min": 0, "max": 4 },
-        "shape.dialogBorder": { "min": 0, "max": 4 },
-        "shape.headerBorder": { "min": 0, "max": 4 },
-        "shape.panelBorder": { "min": 0, "max": 4 },
-        "shape.menuBorder": { "min": 0, "max": 4 },
-        "typography.scale": { "min": 0.85, "max": 1.3 },
-        "motion.focusZoom": { "min": 1.0, "max": 1.15 },
-        "player.buttonScale": { "min": 0.8, "max": 1.4 },
-        "style.gloss": { "min": 0, "max": 1 },
-        "background": true
+        "colors.accent": true,
+        "colors.border": true,
+        "shape.cardRadius": true,
+        "typography.textScale": true,
+        "motion.focusZoom": true,
+        "player.buttonScale": true,
+        "style.gloss": true,
+        "background.colors": true
+      },
+      "enhancements": {
+        "26": {
+          "surfaces": {
+            "painted": true,
+            "glow": true
+          },
+          "style": {
+            "gloss": 0.1
+          },
+          "layout": {
+            "framedHero": true,
+            "floatingRail": true
+          }
+        }
       }
     },
     {
       "id": "arasaka",
       "name": { "es": "Arasaka", "en": "Arasaka" },
       "colors": {
-        "accent": "#FF003C",
+        "accent": "#FF0000",
         "onAccent": "#FFFFFF",
-        "background": "#0D0608",
-        "surface": "#1A0E12",
-        "surfaceHigh": "#26141A",
-        "textPrimary": "#F5F5F5",
-        "textSecondary": "#B3B3B3",
-        "focus": "#FF003C",
-        "onFocus": "#FFFFFF",
-        "outline": "#3A1A22",
-        "railPanel": "#140A0D",
-        "border": "#FF003C",
-        "success": "#00F0A0",
-        "warning": "#FFB300",
-        "error": "#FF003C",
-        "favorite": "#FF003C"
+        "background": "#121212",
+        "surface": "#222222",
+        "surfaceHigh": "#323232",
+        "railPanel": "#1C1C1C",
+        "textPrimary": "#FFFFFF",
+        "textSecondary": "#AAAAAA",
+        "border": "#FF0000"
       },
-      "background": { "type": "gradient", "colors": ["#0D0608", "#2A0008", "#0D0608"], "angle": 180 },
-      "shape": {
-        "cardRadius": 4, "channelRadius": 4, "buttonRadius": 2, "chipRadius": 2,
-        "dialogRadius": 8, "inputRadius": 4, "heroRadius": 8, "railItemRadius": 4,
-        "dialogBorder": 2, "menuBorder": 1, "headerBorder": 2, "cardBorder": 1, "panelBorder": 1
-      },
-      "typography": { "scale": 1.0, "titleScale": 1.1, "bodyScale": 1.0 },
-      "elevation": { "cardShadow": 0.4, "dialogShadow": 0.7, "heroScrim": 0.75 },
-      "motion": { "focusZoom": 1.06, "crossfadeMs": 180, "heroDrift": "off" },
-      "player": { "buttonScale": 1.0, "playButtonScale": 1.1, "seekBarScale": 1.1, "labelScale": 1.0, "buttonShape": "square" },
-      "style": { "gloss": 0.25 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": { "fill": { "type": "gradient", "colors": ["#FF003C", "#A80028"], "angle": 180 }, "stroke": { "width": 1, "color": "#FF7B93" }, "glow": { "color": "#FF003C", "radius": 10, "alpha": 0.5 } },
-        "buttonGhost": { "fill": { "type": "solid", "color": "#26141A" }, "stroke": { "width": 1, "color": "#FF003C" } },
-        "navActive": { "fill": { "type": "solid", "color": "#2A0008" }, "stroke": { "width": 1.5, "color": "#FF003C" }, "glow": { "color": "#FF003C", "radius": 10, "alpha": 0.5 } },
-        "cardFocus": { "stroke": { "width": 2, "color": "#FF003C" }, "glow": { "color": "#FF003C", "radius": 14, "alpha": 0.5 } },
-        "card": { "glow": { "color": "#FF003C", "radius": 8, "alpha": 0.16 } },
-        "focus": { "stroke": { "width": 2, "color": "#FF003C" }, "glow": { "color": "#FF003C", "radius": 10, "alpha": 0.45 } },
-        "progress": { "fill": { "type": "gradient", "colors": ["#FF003C", "#FFB300"], "angle": 0 } }
+      "background": {
+        "type": "gradient",
+        "colors": ["#121212", "#300000"],
+        "angle": 180
       },
       "logo": {
-        "wordmark": {
-          "size": [160, 32],
-          "paths": [
-            { "d": "M0 26 L16 6 L32 26 Z", "fill": "accent" },
-            { "d": "M42 6 H54 V26 H42 Z", "fill": "textPrimary" },
-            { "d": "M60 6 H72 V26 H60 Z", "fill": "accent" },
-            { "d": "M78 6 H90 V26 H78 Z", "fill": "textPrimary" }
-          ]
-        },
-        "mark": {
-          "size": [32, 32],
-          "paths": [
-            { "d": "M0 26 L16 6 L32 26 Z", "fill": "accent" },
-            { "d": "M10 26 L16 16 L22 26 Z", "fill": "#0D0608" }
-          ]
-        }
+        "wordmark": "<svg viewBox=\"0 0 100 20\"><text x=\"0\" y=\"15\" font-family=\"'Cyberpunk', sans-serif\" font-size=\"14\" fill=\"#FF0000\">ARASAKA</text></svg>",
+        "mark": "<svg viewBox=\"0 0 20 20\"><polygon points=\"10,0 20,20 0,20\" fill=\"#FF0000\"/></svg>",
+        "decor": "<svg viewBox=\"0 0 20 20\"><rect x=\"5\" y=\"5\" width=\"10\" height=\"10\" fill=\"#FFFFFF\"/></svg>"
       },
-      "adjustable": {
-        "colors.accent": { "swatches": ["#FF003C", "#FFB300", "#FF6B00", "#E50914", "#FFFFFF"] },
-        "colors.focus": { "swatches": ["#FF003C", "#FFB300", "#FFFFFF"] },
-        "colors.border": { "swatches": ["#FF003C", "#FFB300", "#FFFFFF"] },
-        "shape.cardRadius": { "min": 0, "max": 32 },
-        "shape.buttonRadius": { "min": 0, "max": 32 },
-        "shape.dialogRadius": { "min": 0, "max": 32 },
-        "shape.cardBorder": { "min": 0, "max": 4 },
-        "shape.dialogBorder": { "min": 0, "max": 4 },
-        "shape.headerBorder": { "min": 0, "max": 4 },
-        "shape.panelBorder": { "min": 0, "max": 4 },
-        "shape.menuBorder": { "min": 0, "max": 4 },
-        "typography.scale": { "min": 0.85, "max": 1.3 },
-        "motion.focusZoom": { "min": 1.0, "max": 1.15 },
-        "player.buttonScale": { "min": 0.8, "max": 1.4 },
-        "style.gloss": { "min": 0, "max": 1 },
-        "background": true
-      }
-    },
-    {
-      "id": "netrunner",
-      "name": { "es": "Netrunner", "en": "Netrunner" },
-      "colors": {
-        "accent": "#00F0FF",
-        "onAccent": "#000000",
-        "background": "#060A12",
-        "surface": "#0E1622",
-        "surfaceHigh": "#16202E",
-        "textPrimary": "#E8F6FF",
-        "textSecondary": "#9FB8CC",
-        "focus": "#FF00A0",
-        "onFocus": "#FFFFFF",
-        "outline": "#1E3040",
-        "railPanel": "#0A1018",
-        "border": "#FF00A0",
-        "success": "#00F0A0",
-        "warning": "#FCEE0A",
-        "error": "#FF003C",
-        "favorite": "#FF00A0"
-      },
-      "background": { "type": "gradient", "colors": ["#060A12", "#001A22", "#1A0030"], "angle": 200 },
       "shape": {
-        "cardRadius": 16, "channelRadius": 16, "buttonRadius": 24, "chipRadius": 20,
-        "dialogRadius": 20, "inputRadius": 12, "heroRadius": 22, "railItemRadius": 16,
-        "dialogBorder": 2, "menuBorder": 1, "headerBorder": 1, "cardBorder": 2, "panelBorder": 1
+        "cardRadius": 6,
+        "channelRadius": 28,
+        "buttonRadius": 16,
+        "labelRadius": 6,
+        "dialogRadius": 16,
+        "fieldRadius": 10,
+        "cardBorder": 2,
+        "menuBorder": 1,
+        "lineBorder": 1,
+        "panelBorder": 1
       },
-      "typography": { "scale": 1.08, "titleScale": 1.05, "bodyScale": 1.02 },
-      "elevation": { "cardShadow": 0.6, "dialogShadow": 0.8, "heroScrim": 0.65 },
-      "motion": { "focusZoom": 1.1, "crossfadeMs": 260, "heroDrift": "on" },
-      "player": { "buttonScale": 1.1, "playButtonScale": 1.2, "seekBarScale": 1.3, "labelScale": 1.05, "buttonShape": "circle" },
-      "style": { "gloss": 0.55 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": { "fill": { "type": "gradient", "colors": ["#00F0FF", "#0066FF"], "angle": 180 }, "stroke": { "width": 1, "color": "#B3FFFF" }, "glow": { "color": "#00F0FF", "radius": 14, "alpha": 0.55 } },
-        "buttonGhost": { "fill": { "type": "solid", "color": "#16202E" }, "stroke": { "width": 1, "color": "#FF00A0" } },
-        "navActive": { "fill": { "type": "gradient", "colors": ["#001A22", "#1A0030"], "angle": 90 }, "stroke": { "width": 1.5, "color": "#00F0FF" }, "glow": { "color": "#00F0FF", "radius": 12, "alpha": 0.55 } },
-        "cardFocus": { "stroke": { "width": 2, "color": "#FF00A0" }, "glow": { "color": "#FF00A0", "radius": 16, "alpha": 0.55 } },
-        "card": { "glow": { "color": "#00F0FF", "radius": 10, "alpha": 0.2 } },
-        "focus": { "stroke": { "width": 2, "color": "#FF00A0" }, "glow": { "color": "#FF00A0", "radius": 12, "alpha": 0.5 } },
-        "progress": { "fill": { "type": "gradient", "colors": ["#00F0FF", "#FF00A0"], "angle": 0 } }
+      "typography": {
+        "textScale": 1.0,
+        "titleScale": 1.05,
+        "bodyScale": 0.95
       },
-      "logo": {
-        "wordmark": {
-          "size": [160, 32],
-          "paths": [
-            { "d": "M0 6 H28 V12 H6 V26 H0 Z", "fill": "accent" },
-            { "d": "M38 6 H50 V26 H38 Z", "fill": "textPrimary" },
-            { "d": "M56 6 H68 V26 H56 Z", "fill": "accent" },
-            { "d": "M74 6 H86 V26 H74 Z", "fill": "textPrimary" },
-            { "d": "M92 6 H104 V26 H92 Z", "fill": "accent" }
-          ]
-        },
-        "mark": {
-          "size": [32, 32],
-          "paths": [
-            { "d": "M0 0 H32 V32 H0 Z", "fill": "accent" },
-            { "d": "M6 6 H26 V26 H6 Z", "fill": "#060A12" },
-            { "d": "M12 12 H20 V20 H12 Z", "fill": "accent" }
-          ]
-        }
+      "elevation": {
+        "cardElevation": 0.3,
+        "heroScrim": 0.7,
+        "dialogElevation": 0.5
+      },
+      "motion": {
+        "focusZoom": 1.06,
+        "fadeMs": 300,
+        "heroDrift": false
+      },
+      "player": {
+        "buttonScale": 1.0,
+        "playButtonScale": 1.1,
+        "seekBarScale": 1.0,
+        "labelScale": 0.95,
+        "buttonShape": "square"
       },
       "adjustable": {
-        "colors.accent": { "swatches": ["#00F0FF", "#FF00A0", "#7C4DFF", "#00F0A0", "#FCEE0A"] },
-        "colors.focus": { "swatches": ["#FF00A0", "#00F0FF", "#7C4DFF", "#FFFFFF"] },
-        "colors.border": { "swatches": ["#FF00A0", "#00F0FF", "#7C4DFF", "#00F0A0"] },
-        "shape.cardRadius": { "min": 0, "max": 32 },
-        "shape.buttonRadius": { "min": 0, "max": 32 },
-        "shape.dialogRadius": { "min": 0, "max": 32 },
-        "shape.cardBorder": { "min": 0, "max": 4 },
-        "shape.dialogBorder": { "min": 0, "max": 4 },
-        "shape.headerBorder": { "min": 0, "max": 4 },
-        "shape.panelBorder": { "min": 0, "max": 4 },
-        "shape.menuBorder": { "min": 0, "max": 4 },
-        "typography.scale": { "min": 0.85, "max": 1.3 },
-        "motion.focusZoom": { "min": 1.0, "max": 1.15 },
-        "player.buttonScale": { "min": 0.8, "max": 1.4 },
-        "style.gloss": { "min": 0, "max": 1 },
-        "background": true
-      }
-    }
-  ]
-}
+        "colors.accent": true,
+        "colors.border": true,
+        "shape.cardRadius": true,
+        "typography.textScale": true,
+        "motion.focusZoom": true,
+        "player.buttonScale": true,
+        "style.gloss": true,
+        "background.colors": true
+      },
+      "enhancements": {
+        "26": {
+          "surfaces": {
+            colors": true
+      },
+      "enhancements": {
+        "26": {
+          "surfaces": {
+            
