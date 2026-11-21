@@ -1,7 +1,7 @@
 {
   "id": "theme-neon",
   "name": "Neón",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "apiVersion": 26,
   "entry": "plugin.js",
   "description": "Tema oscuro con acentos neón",
