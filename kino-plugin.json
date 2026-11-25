@@ -10,7 +10,7 @@
   "categories": ["themes"],
   "appThemes": [
     {
-      "id": "sexy",
+      "id": "color-pastel",
       "name": { "es": "Color Pastel", "en": "Pastel Color" },
       "colors": {
         "accent": "#FFB7D5",
