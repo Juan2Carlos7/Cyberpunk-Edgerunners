@@ -1,7 +1,7 @@
 {
   "id": "theme-naruto-shippuden-pro",
   "name": "Kino TV Pro Naruto",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "apiVersion": 26,
   "entry": "plugin.js",
   "description": "Kino TV Pro: 5 temas ninja (Naruto, Akatsuki, Sage Mode, Sharingan, Rasengan) con logo propio, degradados, resplandores y personalizaciÃ³n. / 5 ninja themes for Kino TV Pro with custom logo, gradients, glows and customization.",
