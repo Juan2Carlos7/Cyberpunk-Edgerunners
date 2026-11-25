@@ -1,7 +1,7 @@
 {
   "id": "theme-color-pastel",
   "name": "Color Pastel",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "apiVersion": 18,
   "entry": "plugin.js",
   "icon": "icon.png",
