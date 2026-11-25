@@ -1,10 +1,10 @@
 {
   "id": "theme-naruto-shippuden-pro",
   "name": "Kino TV Pro Naruto",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "apiVersion": 26,
   "entry": "plugin.js",
-  "description": "Kino TV Pro: temas Naruto Shippuden y Akatsuki con logo propio, degradados y resplandores. / Naruto Shippuden and Akatsuki themes for Kino TV Pro.",
+  "description": "Kino TV Pro: temas Naruto Shippuden y Akatsuki con logo propio, degradados, resplandores y muchas opciones de personalizaciÃ³n. / Naruto Shippuden and Akatsuki themes for Kino TV Pro, highly customizable.",
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
@@ -32,7 +32,7 @@
       "shape": {
         "cardRadius": 14, "channelRadius": 14, "buttonRadius": 22, "chipRadius": 20,
         "dialogRadius": 20, "inputRadius": 12, "heroRadius": 20, "railItemRadius": 16,
-        "dialogBorder": 1, "menuBorder": 1, "headerBorder": 1, "panelBorder": 1
+        "dialogBorder": 1, "menuBorder": 1, "headerBorder": 1, "panelBorder": 1, "cardBorder": 1
       },
       "typography": { "scale": 1.05, "titleScale": 1.1, "bodyScale": 1.0 },
       "elevation": { "cardShadow": 0.5, "dialogShadow": 0.7, "heroScrim": 0.7 },
@@ -76,9 +76,35 @@
         }
       },
       "adjustable": {
-        "colors.accent": { "swatches": ["#FF7A00", "#FFB300", "#2B7BFF", "#E5192E"] },
-        "shape.cardRadius": { "min": 0, "max": 24 },
-        "typography.scale": { "min": 0.95, "max": 1.25 },
+        "colors.accent": { "swatches": ["#FF7A00", "#FFB300", "#2B7BFF", "#00C2A8", "#B388FF", "#7CFF6B"] },
+        "colors.focus": { "swatches": ["#FFB300", "#FFFFFF", "#00E5FF", "#7CFF6B"] },
+        "colors.border": { "swatches": ["#2B4A8C", "#FF7A00", "#FFFFFF", "#7C4DFF"] },
+        "colors.surface": { "swatches": ["#131C2E", "#181818", "#1A1030", "#10241F"] },
+        "colors.surfaceHigh": { "swatches": ["#1C2740", "#242424", "#2A1A48", "#183A32"] },
+        "colors.favorite": { "swatches": ["#FF7A00", "#FF3B47", "#FFD600", "#00E5FF"] },
+        "shape.cardRadius": { "min": 0, "max": 32 },
+        "shape.channelRadius": { "min": 0, "max": 32 },
+        "shape.buttonRadius": { "min": 0, "max": 32 },
+        "shape.chipRadius": { "min": 0, "max": 32 },
+        "shape.dialogRadius": { "min": 0, "max": 32 },
+        "shape.inputRadius": { "min": 0, "max": 32 },
+        "shape.heroRadius": { "min": 0, "max": 32 },
+        "shape.railItemRadius": { "min": 0, "max": 24 },
+        "shape.cardBorder": { "min": 0, "max": 4 },
+        "shape.dialogBorder": { "min": 0, "max": 4 },
+        "shape.panelBorder": { "min": 0, "max": 4 },
+        "typography.scale": { "min": 0.85, "max": 1.3 },
+        "typography.titleScale": { "min": 0.85, "max": 1.3 },
+        "typography.bodyScale": { "min": 0.85, "max": 1.3 },
+        "elevation.cardShadow": { "min": 0, "max": 1 },
+        "elevation.dialogShadow": { "min": 0, "max": 1 },
+        "elevation.heroScrim": { "min": 0.3, "max": 1 },
+        "motion.focusZoom": { "min": 1, "max": 1.15 },
+        "motion.crossfadeMs": { "min": 0, "max": 800 },
+        "player.buttonScale": { "min": 0.8, "max": 1.4 },
+        "player.playButtonScale": { "min": 0.8, "max": 1.6 },
+        "player.seekBarScale": { "min": 0.8, "max": 2 },
+        "player.labelScale": { "min": 0.85, "max": 1.3 },
         "background": true
       }
     },
@@ -106,7 +132,7 @@
       "shape": {
         "cardRadius": 10, "channelRadius": 10, "buttonRadius": 18, "chipRadius": 18,
         "dialogRadius": 16, "inputRadius": 10, "heroRadius": 16, "railItemRadius": 14,
-        "dialogBorder": 1, "headerBorder": 1, "panelBorder": 1
+        "dialogBorder": 1, "headerBorder": 1, "panelBorder": 1, "cardBorder": 1
       },
       "typography": { "scale": 1.05, "titleScale": 1.1, "bodyScale": 1.0 },
       "elevation": { "cardShadow": 0.6, "dialogShadow": 0.8, "heroScrim": 0.75 },
@@ -147,8 +173,34 @@
         }
       },
       "adjustable": {
-        "colors.accent": { "swatches": ["#D0141E", "#FF7A00", "#7C4DFF"] },
-        "shape.cardRadius": { "min": 0, "max": 24 },
+        "colors.accent": { "swatches": ["#D0141E", "#C2185B", "#8E24AA", "#0277BD", "#2E7D32"] },
+        "colors.focus": { "swatches": ["#FF3B47", "#FFFFFF", "#FFB300", "#00E5FF"] },
+        "colors.border": { "swatches": ["#7A0C14", "#D0141E", "#FFFFFF", "#4A4A4A"] },
+        "colors.surface": { "swatches": ["#140A0C", "#181818", "#120A1C", "#0A1412"] },
+        "colors.surfaceHigh": { "swatches": ["#22100F", "#242424", "#22143A", "#12261F"] },
+        "colors.favorite": { "swatches": ["#FF3B47", "#FF7A00", "#FFD600", "#00E5FF"] },
+        "shape.cardRadius": { "min": 0, "max": 32 },
+        "shape.channelRadius": { "min": 0, "max": 32 },
+        "shape.buttonRadius": { "min": 0, "max": 32 },
+        "shape.chipRadius": { "min": 0, "max": 32 },
+        "shape.dialogRadius": { "min": 0, "max": 32 },
+        "shape.inputRadius": { "min": 0, "max": 32 },
+        "shape.heroRadius": { "min": 0, "max": 32 },
+        "shape.railItemRadius": { "min": 0, "max": 24 },
+        "shape.cardBorder": { "min": 0, "max": 4 },
+        "shape.dialogBorder": { "min": 0, "max": 4 },
+        "shape.panelBorder": { "min": 0, "max": 4 },
+        "typography.scale": { "min": 0.85, "max": 1.3 },
+        "typography.titleScale": { "min": 0.85, "max": 1.3 },
+        "typography.bodyScale": { "min": 0.85, "max": 1.3 },
+        "elevation.cardShadow": { "min": 0, "max": 1 },
+        "elevation.dialogShadow": { "min": 0, "max": 1 },
+        "elevation.heroScrim": { "min": 0.3, "max": 1 },
+        "motion.focusZoom": { "min": 1, "max": 1.15 },
+        "motion.crossfadeMs": { "min": 0, "max": 800 },
+        "player.buttonScale": { "min": 0.8, "max": 1.4 },
+        "player.playButtonScale": { "min": 0.8, "max": 1.6 },
+        "player.seekBarScale": { "min": 0.8, "max": 2 },
         "background": true
       }
     }
