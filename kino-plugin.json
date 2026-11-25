@@ -1,7 +1,7 @@
 {
   "id": "theme-demon-slayer",
   "name": "Demon Slayer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiVersion": 26,
   "entry": "plugin.js",
   "description": "Tema Demon Slayer: Tanjiro, haori ajedrezado y llamas Hinokami",
@@ -55,15 +55,28 @@
       },
       "logo": {
         "wordmark": {
-          "size": [120, 40],
+          "size": [264, 64],
           "paths": [
-            { "d": "M20 38 C4 30 8 14 18 2 C20 12 30 14 30 26 C30 32 26 36 20 38 Z", "fill": "#FF7A1A" },
-            { "d": "M40 8 H52 V20 H40 Z", "fill": "accent" },
-            { "d": "M52 20 H64 V32 H52 Z", "fill": "accent" },
-            { "d": "M52 8 H64 V20 H52 Z", "fill": "#0F3D2B" },
-            { "d": "M40 20 H52 V32 H40 Z", "fill": "#0F3D2B" },
-            { "d": "M76 14 H112 V18 H76 Z", "fill": "textPrimary" },
-            { "d": "M76 24 H100 V28 H76 Z", "fill": "textSecondary" }
+            {
+              "d": "M0 10 H9 V50 H0 Z M32 10 H43 L16 31 L10 25 Z M16 28 L24 24 L44 50 H33 Z M54 10 H64 L61 50 H51 Z M72 10 H82 V50 H72 Z M82 10 H92 L110 50 H100 Z M100 10 H110 V50 H100 Z M184 10 H220 V19 H184 Z M197 19 H207 V50 H197 Z M226 10 H237 L245 38 L253 10 H264 L250 50 H240 Z",
+              "fill": "textPrimary"
+            },
+            {
+              "d": "M120 20 L130 10 H150 L160 20 V40 L150 50 H130 L120 40 Z M130 22 V38 H150 V22 Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M140 24 C132 30 134 38 140 38 C146 38 148 30 140 24 Z",
+              "fill": "#FF7A1A"
+            },
+            {
+              "d": "M0 54 H6 V60 H0 Z M12 54 H18 V60 H12 Z M24 54 H30 V60 H24 Z M36 54 H42 V60 H36 Z M48 54 H54 V60 H48 Z M60 54 H66 V60 H60 Z M72 54 H78 V60 H72 Z M84 54 H90 V60 H84 Z M96 54 H102 V60 H96 Z M108 54 H114 V60 H108 Z M120 54 H126 V60 H120 Z M132 54 H138 V60 H132 Z M144 54 H150 V60 H144 Z M156 54 H162 V60 H156 Z M168 54 H174 V60 H168 Z M180 54 H186 V60 H180 Z M192 54 H198 V60 H192 Z M204 54 H210 V60 H204 Z M216 54 H222 V60 H216 Z M228 54 H234 V60 H228 Z M240 54 H246 V60 H240 Z M252 54 H258 V60 H252 Z",
+              "fill": "accent"
+            },
+            {
+              "d": "M6 54 H12 V60 H6 Z M18 54 H24 V60 H18 Z M30 54 H36 V60 H30 Z M42 54 H48 V60 H42 Z M54 54 H60 V60 H54 Z M66 54 H72 V60 H66 Z M78 54 H84 V60 H78 Z M90 54 H96 V60 H90 Z M102 54 H108 V60 H102 Z M114 54 H120 V60 H114 Z M126 54 H132 V60 H126 Z M138 54 H144 V60 H138 Z M150 54 H156 V60 H150 Z M162 54 H168 V60 H162 Z M174 54 H180 V60 H174 Z M186 54 H192 V60 H186 Z M198 54 H204 V60 H198 Z M210 54 H216 V60 H210 Z M222 54 H228 V60 H222 Z M234 54 H240 V60 H234 Z M246 54 H252 V60 H246 Z M258 54 H264 V60 H258 Z",
+              "fill": "#0F3D2B"
+            }
           ]
         },
         "mark": {
