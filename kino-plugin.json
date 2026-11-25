@@ -1,7 +1,7 @@
 {
   "id": "theme-naruto-shippuden",
   "name": "Naruto Shippuden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "apiVersion": 26,
   "entry": "plugin.js",
   "description": "Tema Naruto Shippuden: naranja, azul noche y logo ninja",
