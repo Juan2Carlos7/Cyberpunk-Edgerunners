@@ -4,6 +4,7 @@
   "version": "1.3.0",
   "apiVersion": 26,
   "entry": "plugin.js",
+  "icon": "icon.png",
   "description": "Kino TV Pro: temas Naruto Shippuden y Akatsuki con logo propio, degradados, resplandores y muchas opciones de personalizaciÃ³n. / Naruto Shippuden and Akatsuki themes for Kino TV Pro, highly customizable.",
   "hosts": [],
   "categories": ["themes"],
