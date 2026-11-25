@@ -1,10 +1,10 @@
 {
   "id": "theme-demon-slayer",
   "name": "Demon Slayer",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "apiVersion": 26,
   "entry": "plugin.js",
-  "description": "Tema Demon Slayer: Tanjiro, haori ajedrezado y llamas Hinokami",
+  "description": "Temas Demon Slayer: Tanjiro, Nezuko y Zenitsu",
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
@@ -37,16 +37,20 @@
           "fill": { "type": "gradient", "colors": ["#3BD594", "#1E8A5C"], "angle": 180 },
           "stroke": { "width": 1, "color": "#8CF0C4" }
         },
+        "buttonGhost": { "stroke": { "width": 1, "color": "#1F5A41" } },
         "navActive": {
           "fill": { "type": "solid", "color": "#0F2A1F" },
           "stroke": { "width": 1.5, "color": "#FF7A1A" },
           "glow": { "color": "#FF7A1A", "radius": 10, "alpha": 0.5 }
         },
+        "rail": { "stroke": { "width": 1, "color": "#1F5A41" } },
+        "iconButton": { "stroke": { "width": 1, "color": "#2FB67C" } },
         "cardFocus": {
           "stroke": { "width": 2, "gradient": { "type": "gradient", "colors": ["#FF7A1A", "#FFD27A"], "angle": 90 } },
           "glow": { "color": "#FF5A1F", "radius": 14, "alpha": 0.5 }
         },
         "card": { "glow": { "color": "#2FB67C", "radius": 8, "alpha": 0.18 } },
+        "focus": { "stroke": { "width": 2, "color": "#FF7A1A" }, "glow": { "color": "#FF5A1F", "radius": 8, "alpha": 0.4 } },
         "hero": {
           "stroke": { "width": 1.5, "color": "#2FB67C" },
           "glow": { "color": "#2FB67C", "radius": 16, "alpha": 0.3 }
@@ -55,27 +59,35 @@
       },
       "logo": {
         "wordmark": {
-          "size": [264, 64],
+          "size": [272, 72],
           "paths": [
             {
-              "d": "M0 10 H9 V50 H0 Z M32 10 H43 L16 31 L10 25 Z M16 28 L24 24 L44 50 H33 Z M54 10 H64 L61 50 H51 Z M72 10 H82 V50 H72 Z M82 10 H92 L110 50 H100 Z M100 10 H110 V50 H100 Z M184 10 H220 V19 H184 Z M197 19 H207 V50 H197 Z M226 10 H237 L245 38 L253 10 H264 L250 50 H240 Z",
+              "d": "M2 8 H12 L10 52 H0 Z M36 6 H48 L18 32 L11 24 Z M17 30 L26 26 L50 54 H36 Z M58 6 H69 L65 54 H55 Z M76 8 H87 L85 52 H74 Z M87 8 H98 L116 52 H105 Z M106 6 H117 L115 54 H104 Z M182 8 H224 L222 18 H182 Z M197 18 H208 L206 54 H196 Z M230 6 H242 L250 40 L258 6 H270 L254 54 H246 Z",
               "fill": "textPrimary"
             },
             {
-              "d": "M120 20 L130 10 H150 L160 20 V40 L150 50 H130 L120 40 Z M130 22 V38 H150 V22 Z",
+              "d": "M126 22 L137 8 H157 L168 22 V40 L157 54 H137 L126 40 Z M137 24 V38 H157 V24 Z",
               "fill": "accent"
             },
             {
-              "d": "M140 24 C132 30 134 38 140 38 C146 38 148 30 140 24 Z",
+              "d": "M147 25 C139 31 141 38 147 38 C153 38 155 31 147 25 Z",
               "fill": "#FF7A1A"
             },
             {
-              "d": "M0 54 H6 V60 H0 Z M12 54 H18 V60 H12 Z M24 54 H30 V60 H24 Z M36 54 H42 V60 H36 Z M48 54 H54 V60 H48 Z M60 54 H66 V60 H60 Z M72 54 H78 V60 H72 Z M84 54 H90 V60 H84 Z M96 54 H102 V60 H96 Z M108 54 H114 V60 H108 Z M120 54 H126 V60 H120 Z M132 54 H138 V60 H132 Z M144 54 H150 V60 H144 Z M156 54 H162 V60 H156 Z M168 54 H174 V60 H168 Z M180 54 H186 V60 H180 Z M192 54 H198 V60 H192 Z M204 54 H210 V60 H204 Z M216 54 H222 V60 H216 Z M228 54 H234 V60 H228 Z M240 54 H246 V60 H240 Z M252 54 H258 V60 H252 Z",
+              "d": "M172 4 L176 14 L168 14 Z M120 2 L123 9 L117 9 Z M262 -0 L265 4 L259 4 Z M186 0 L189 6 L183 6 Z",
+              "fill": "#FF5A1F"
+            },
+            {
+              "d": "M0 60 H8 V66 H0 Z M16 60 H24 V66 H16 Z M32 60 H40 V66 H32 Z M48 60 H56 V66 H48 Z M64 60 H72 V66 H64 Z M80 60 H88 V66 H80 Z M96 60 H104 V66 H96 Z M112 60 H120 V66 H112 Z M128 60 H136 V66 H128 Z M144 60 H152 V66 H144 Z M160 60 H168 V66 H160 Z M176 60 H184 V66 H176 Z M192 60 H200 V66 H192 Z M208 60 H216 V66 H208 Z M224 60 H232 V66 H224 Z M240 60 H248 V66 H240 Z M256 60 H264 V66 H256 Z",
               "fill": "accent"
             },
             {
-              "d": "M6 54 H12 V60 H6 Z M18 54 H24 V60 H18 Z M30 54 H36 V60 H30 Z M42 54 H48 V60 H42 Z M54 54 H60 V60 H54 Z M66 54 H72 V60 H66 Z M78 54 H84 V60 H78 Z M90 54 H96 V60 H90 Z M102 54 H108 V60 H102 Z M114 54 H120 V60 H114 Z M126 54 H132 V60 H126 Z M138 54 H144 V60 H138 Z M150 54 H156 V60 H150 Z M162 54 H168 V60 H162 Z M174 54 H180 V60 H174 Z M186 54 H192 V60 H186 Z M198 54 H204 V60 H198 Z M210 54 H216 V60 H210 Z M222 54 H228 V60 H222 Z M234 54 H240 V60 H234 Z M246 54 H252 V60 H246 Z M258 54 H264 V60 H258 Z",
+              "d": "M8 60 H16 V66 H8 Z M24 60 H32 V66 H24 Z M40 60 H48 V66 H40 Z M56 60 H64 V66 H56 Z M72 60 H80 V66 H72 Z M88 60 H96 V66 H88 Z M104 60 H112 V66 H104 Z M120 60 H128 V66 H120 Z M136 60 H144 V66 H136 Z M152 60 H160 V66 H152 Z M168 60 H176 V66 H168 Z M184 60 H192 V66 H184 Z M200 60 H208 V66 H200 Z M216 60 H224 V66 H216 Z M232 60 H240 V66 H232 Z M248 60 H256 V66 H248 Z M264 60 H272 V66 H264 Z",
               "fill": "#0F3D2B"
+            },
+            {
+              "d": "M0 56 L272 53 L272 55 L0 58 Z",
+              "fill": "textSecondary"
             }
           ]
         },
@@ -93,6 +105,91 @@
       "adjustable": {
         "colors.accent": { "swatches": ["#2FB67C", "#FF7A1A", "#E5383B", "#F2C94C"] },
         "shape.cardRadius": { "min": 0, "max": 20 },
+        "background": true
+      }
+    },
+    {
+      "id": "nezuko",
+      "name": { "es": "Demon Slayer · Nezuko", "en": "Demon Slayer · Nezuko" },
+      "experience": "full",
+      "colors": {
+        "accent": "#FF7EB6", "onAccent": "#1A0510",
+        "background": "#120709", "surface": "#1F0E13",
+        "surfaceHigh": "#2B141C", "railPanel": "#180A0F",
+        "focus": "#7FD99A", "onFocus": "#000000",
+        "border": "#7A2D49", "favorite": "#FF7EB6"
+      },
+      "background": { "type": "gradient", "colors": ["#120709", "#07120D"], "angle": 160 },
+      "shape": { "cardRadius": 16, "buttonRadius": 20, "chipRadius": 16, "dialogRadius": 20, "heroRadius": 22, "railItemRadius": 14, "cardBorder": 1 },
+      "style": { "gloss": 0.25 },
+      "layout": { "hero": "framed", "rail": "floating" },
+      "surfaces": {
+        "button": { "fill": { "type": "gradient", "colors": ["#FF9CC8", "#E0508F"], "angle": 180 } },
+        "navActive": {
+          "fill": { "type": "solid", "color": "#2B141C" },
+          "stroke": { "width": 1.5, "color": "#FF7EB6" },
+          "glow": { "color": "#FF7EB6", "radius": 10, "alpha": 0.45 }
+        },
+        "cardFocus": {
+          "stroke": { "width": 2, "color": "#7FD99A" },
+          "glow": { "color": "#FF7EB6", "radius": 14, "alpha": 0.45 }
+        },
+        "progress": { "fill": { "type": "gradient", "colors": ["#FF7EB6", "#7FD99A"], "angle": 0 } }
+      },
+      "logo": {
+        "mark": {
+          "size": [40, 40],
+          "paths": [
+            { "d": "M2 13 H38 V27 H2 Z", "fill": "#7FD99A" },
+            { "d": "M12 11 H16 V29 H12 Z M24 11 H28 V29 H24 Z", "fill": "#2E7D4F" },
+            { "d": "M30 27 L38 38 L33 38 L27 30 Z", "fill": "accent" }
+          ]
+        }
+      },
+      "adjustable": {
+        "colors.accent": { "swatches": ["#FF7EB6", "#7FD99A", "#FFB347"] },
+        "background": true
+      }
+    },
+    {
+      "id": "zenitsu",
+      "name": { "es": "Demon Slayer · Zenitsu", "en": "Demon Slayer · Zenitsu" },
+      "experience": "full",
+      "colors": {
+        "accent": "#FFD23F", "onAccent": "#1A1400",
+        "background": "#0E0B03", "surface": "#1A1506",
+        "surfaceHigh": "#262009", "railPanel": "#130F04",
+        "focus": "#FFFFFF", "onFocus": "#000000",
+        "border": "#6B5A12", "favorite": "#FF8A1F"
+      },
+      "background": { "type": "gradient", "colors": ["#0E0B03", "#1A0A00"], "angle": 160 },
+      "shape": { "cardRadius": 6, "buttonRadius": 8, "chipRadius": 6, "dialogRadius": 10, "heroRadius": 12, "railItemRadius": 8, "cardBorder": 1 },
+      "motion": { "focusZoom": 1.1, "crossfadeMs": 200 },
+      "style": { "gloss": 0.3 },
+      "layout": { "hero": "framed", "rail": "floating" },
+      "surfaces": {
+        "button": { "fill": { "type": "gradient", "colors": ["#FFE066", "#E0A800"], "angle": 180 } },
+        "navActive": {
+          "fill": { "type": "solid", "color": "#262009" },
+          "stroke": { "width": 1.5, "color": "#FFD23F" },
+          "glow": { "color": "#FFD23F", "radius": 12, "alpha": 0.55 }
+        },
+        "cardFocus": {
+          "stroke": { "width": 2, "color": "#FFFFFF" },
+          "glow": { "color": "#FFD23F", "radius": 16, "alpha": 0.6 }
+        },
+        "progress": { "fill": { "type": "gradient", "colors": ["#FF8A1F", "#FFE066"], "angle": 0 } }
+      },
+      "logo": {
+        "mark": {
+          "size": [40, 40],
+          "paths": [
+            { "d": "M26 0 L8 22 H18 L14 40 L32 16 H22 Z", "fill": "accent" }
+          ]
+        }
+      },
+      "adjustable": {
+        "colors.accent": { "swatches": ["#FFD23F", "#FF8A1F", "#FFFFFF"] },
         "background": true
       }
     }
