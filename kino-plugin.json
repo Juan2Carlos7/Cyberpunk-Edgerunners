@@ -1,179 +1,85 @@
 {
-  "id": "theme-neon",
-  "name": "Neón",
-  "version": "2.0.0",
+  "id": "theme-demon-slayer",
+  "name": "Demon Slayer",
+  "version": "1.0.0",
   "apiVersion": 26,
   "entry": "plugin.js",
-  "description": "Tema oscuro con acentos neón y personalización completa",
+  "description": "Tema Demon Slayer: Tanjiro, haori ajedrezado y llamas Hinokami",
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
     {
-      "id": "neon",
-      "name": { "es": "Neón", "en": "Neon" },
+      "id": "tanjiro",
+      "name": { "es": "Demon Slayer · Tanjiro", "en": "Demon Slayer · Tanjiro" },
       "experience": "full",
       "colors": {
-        "accent": "#00E5FF",
-        "onAccent": "#000000",
-        "background": "#0A0A14",
-        "surface": "#14142A",
-        "surfaceHigh": "#1E1E3A",
-        "textPrimary": "#F2F4FF",
-        "textSecondary": "#A8B0CC",
-        "focus": "#FFFFFF",
-        "onFocus": "#000000",
-        "outline": "#2A2A4A",
-        "border": "#2E2E52",
-        "railPanel": "#101026",
-        "placeholderTop": "#1A1A2E",
-        "placeholderBottom": "#0C0C18",
-        "success": "#3DDC97",
-        "warning": "#FFB300",
-        "error": "#FF3B6B",
-        "favorite": "#FF4D8D",
-        "scrim": "#000000"
+        "accent": "#2FB67C", "onAccent": "#04140D",
+        "background": "#070D0B", "surface": "#0F1A16",
+        "surfaceHigh": "#16271F", "railPanel": "#0B1411",
+        "focus": "#FF7A1A", "onFocus": "#000000",
+        "border": "#1F5A41", "favorite": "#FF5A1F"
       },
-      "background": {
-        "type": "gradient",
-        "colors": ["#0A0A14", "#1A0A2E"],
-        "angle": 180
-      },
+      "background": { "type": "gradient", "colors": ["#070D0B", "#14090A"], "angle": 160 },
       "shape": {
-        "cardRadius": 14,
-        "channelRadius": 14,
-        "buttonRadius": 24,
-        "chipRadius": 20,
-        "dialogRadius": 20,
-        "inputRadius": 12,
-        "cardBorder": 1,
-        "dialogBorder": 2,
-        "menuBorder": 1,
-        "headerBorder": 1,
-        "panelBorder": 1,
-        "heroRadius": 20,
-        "railItemRadius": 14
+        "cardRadius": 10, "channelRadius": 10, "buttonRadius": 12,
+        "chipRadius": 8, "dialogRadius": 14, "inputRadius": 8,
+        "cardBorder": 1, "dialogBorder": 2, "headerBorder": 1,
+        "heroRadius": 18, "railItemRadius": 10
       },
-      "typography": {
-        "scale": 1.05,
-        "titleScale": 1.05,
-        "bodyScale": 1.0
-      },
-      "elevation": {
-        "cardShadow": 0.6,
-        "dialogShadow": 0.8,
-        "heroScrim": 0.7
-      },
-      "motion": {
-        "focusZoom": 1.06,
-        "crossfadeMs": 200,
-        "heroDrift": "on"
-      },
-      "player": {
-        "buttonScale": 1,
-        "playButtonScale": 1.1,
-        "seekBarScale": 1,
-        "labelScale": 1,
-        "buttonShape": "circle"
-      },
-      "style": {
-        "gloss": 0.35
-      },
+      "typography": { "scale": 1.0, "titleScale": 1.1, "bodyScale": 1.0 },
+      "elevation": { "cardShadow": 0.5, "dialogShadow": 0.8, "heroScrim": 0.75 },
+      "motion": { "focusZoom": 1.08, "crossfadeMs": 300, "heroDrift": "on" },
+      "player": { "buttonScale": 1.1, "playButtonScale": 1.3, "seekBarScale": 1.4, "buttonShape": "rounded" },
+      "style": { "gloss": 0.3 },
+      "layout": { "hero": "framed", "rail": "floating" },
       "surfaces": {
         "button": {
-          "fill": { "type": "gradient", "colors": ["#00E5FF", "#0088AA"], "angle": 180 },
-          "stroke": { "width": 1, "color": "#7CF0FF" }
-        },
-        "buttonGhost": {
-          "fill": { "type": "solid", "color": "#14142A" },
-          "stroke": { "width": 1, "color": "#2E2E52" }
-        },
-        "iconButton": {
-          "fill": { "type": "solid", "color": "#1E1E3A" },
-          "glow": { "color": "#00E5FF", "radius": 6, "alpha": 0.2 }
+          "fill": { "type": "gradient", "colors": ["#3BD594", "#1E8A5C"], "angle": 180 },
+          "stroke": { "width": 1, "color": "#8CF0C4" }
         },
         "navActive": {
-          "fill": { "type": "solid", "color": "#14142A" },
-          "stroke": { "width": 1.5, "color": "#00E5FF" },
-          "glow": { "color": "#00E5FF", "radius": 10, "alpha": 0.5 }
-        },
-        "rail": {
-          "fill": { "type": "solid", "color": "#101026" },
-          "stroke": { "width": 1, "color": "#2E2E52" }
+          "fill": { "type": "solid", "color": "#0F2A1F" },
+          "stroke": { "width": 1.5, "color": "#FF7A1A" },
+          "glow": { "color": "#FF7A1A", "radius": 10, "alpha": 0.5 }
         },
         "cardFocus": {
-          "stroke": { "width": 2, "color": "#FFFFFF" },
-          "glow": { "color": "#00E5FF", "radius": 14, "alpha": 0.45 }
+          "stroke": { "width": 2, "gradient": { "type": "gradient", "colors": ["#FF7A1A", "#FFD27A"], "angle": 90 } },
+          "glow": { "color": "#FF5A1F", "radius": 14, "alpha": 0.5 }
         },
-        "card": {
-          "glow": { "color": "#00E5FF", "radius": 8, "alpha": 0.18 }
-        },
-        "focus": {
-          "stroke": { "width": 2, "color": "#FFFFFF" },
-          "glow": { "color": "#00E5FF", "radius": 10, "alpha": 0.4 }
-        },
+        "card": { "glow": { "color": "#2FB67C", "radius": 8, "alpha": 0.18 } },
         "hero": {
-          "stroke": { "width": 1, "color": "#2E2E52" },
-          "glow": { "color": "#00E5FF", "radius": 18, "alpha": 0.3 }
+          "stroke": { "width": 1.5, "color": "#2FB67C" },
+          "glow": { "color": "#2FB67C", "radius": 16, "alpha": 0.3 }
         },
-        "progress": {
-          "fill": { "type": "gradient", "colors": ["#00E5FF", "#0088AA"], "angle": 90 }
+        "progress": { "fill": { "type": "gradient", "colors": ["#FF5A1F", "#FFB347"], "angle": 0 } }
+      },
+      "logo": {
+        "wordmark": {
+          "size": [120, 40],
+          "paths": [
+            { "d": "M20 38 C4 30 8 14 18 2 C20 12 30 14 30 26 C30 32 26 36 20 38 Z", "fill": "#FF7A1A" },
+            { "d": "M40 8 H52 V20 H40 Z", "fill": "accent" },
+            { "d": "M52 20 H64 V32 H52 Z", "fill": "accent" },
+            { "d": "M52 8 H64 V20 H52 Z", "fill": "#0F3D2B" },
+            { "d": "M40 20 H52 V32 H40 Z", "fill": "#0F3D2B" },
+            { "d": "M76 14 H112 V18 H76 Z", "fill": "textPrimary" },
+            { "d": "M76 24 H100 V28 H76 Z", "fill": "textSecondary" }
+          ]
+        },
+        "mark": {
+          "size": [40, 40],
+          "paths": [
+            { "d": "M0 0 H20 V20 H0 Z", "fill": "accent" },
+            { "d": "M20 20 H40 V40 H20 Z", "fill": "accent" },
+            { "d": "M20 0 H40 V20 H20 Z", "fill": "#0F3D2B" },
+            { "d": "M0 20 H20 V40 H0 Z", "fill": "#0F3D2B" },
+            { "d": "M20 8 C12 14 14 22 20 32 C26 22 28 14 20 8 Z", "fill": "#FF7A1A" }
+          ]
         }
       },
-      "layout": {
-        "hero": "framed",
-        "rail": "floating"
-      },
-      "tv": {
-        "typography": { "scale": 1.0 },
-        "layout": { "hero": "framed", "rail": "floating" }
-      },
       "adjustable": {
-        "colors.accent": { "swatches": ["#00E5FF", "#9B7CFF", "#FFB300", "#FF3B6B", "#3DDC97"] },
-        "colors.onAccent": { "swatches": ["#000000", "#0A0A14", "#FFFFFF"] },
-        "colors.background": { "swatches": ["#0A0A14", "#0C1018", "#100A18", "#08120E", "#12100A"] },
-        "colors.surface": { "swatches": ["#14142A", "#0F1A24", "#1A1224", "#101010"] },
-        "colors.surfaceHigh": { "swatches": ["#1E1E3A", "#16283A", "#241A38", "#1A1A1A"] },
-        "colors.railPanel": { "swatches": ["#101026", "#0A1A20", "#180A20", "#0A0A0A"] },
-        "colors.border": { "swatches": ["#2E2E52", "#3A2A5C", "#1E3A44", "#000000"] },
-        "colors.outline": { "swatches": ["#2A2A4A", "#3A2A5C", "#1E3A44", "#101010"] },
-        "colors.focus": { "swatches": ["#FFFFFF", "#00E5FF", "#FFB300", "#9B7CFF"] },
-        "colors.onFocus": { "swatches": ["#000000", "#0A0A14", "#FFFFFF"] },
-        "colors.textPrimary": { "swatches": ["#F2F4FF", "#FFFFFF", "#E8E4F0", "#DCE6F0"] },
-        "colors.textSecondary": { "swatches": ["#A8B0CC", "#B8C0D8", "#8E9AB8", "#C4C8D4"] },
-        "colors.placeholderTop": { "swatches": ["#1A1A2E", "#14202E", "#241A2E", "#141414"] },
-        "colors.placeholderBottom": { "swatches": ["#0C0C18", "#08121A", "#160A1A", "#080808"] },
-        "colors.success": { "swatches": ["#3DDC97", "#4CD98A", "#00E5FF"] },
-        "colors.warning": { "swatches": ["#FFB300", "#FFC94D", "#FF8A3D"] },
-        "colors.error": { "swatches": ["#FF3B6B", "#FF5252", "#D9232F"] },
-        "colors.favorite": { "swatches": ["#FF4D8D", "#FF3B6B", "#FF7B83"] },
-        "colors.scrim": { "swatches": ["#000000", "#0A0A14", "#101026"] },
-        "shape.cardRadius": { "min": 0, "max": 32 },
-        "shape.channelRadius": { "min": 0, "max": 32 },
-        "shape.buttonRadius": { "min": 0, "max": 32 },
-        "shape.chipRadius": { "min": 0, "max": 32 },
-        "shape.dialogRadius": { "min": 0, "max": 32 },
-        "shape.inputRadius": { "min": 0, "max": 32 },
-        "shape.heroRadius": { "min": 0, "max": 32 },
-        "shape.railItemRadius": { "min": 0, "max": 24 },
-        "shape.cardBorder": { "min": 0, "max": 4 },
-        "shape.dialogBorder": { "min": 0, "max": 4 },
-        "shape.menuBorder": { "min": 0, "max": 4 },
-        "shape.headerBorder": { "min": 0, "max": 4 },
-        "shape.panelBorder": { "min": 0, "max": 4 },
-        "typography.scale": { "min": 0.85, "max": 1.3 },
-        "typography.titleScale": { "min": 0.85, "max": 1.3 },
-        "typography.bodyScale": { "min": 0.85, "max": 1.3 },
-        "elevation.cardShadow": { "min": 0, "max": 1 },
-        "elevation.dialogShadow": { "min": 0, "max": 1 },
-        "elevation.heroScrim": { "min": 0.3, "max": 1 },
-        "motion.focusZoom": { "min": 1, "max": 1.15 },
-        "motion.crossfadeMs": { "min": 0, "max": 800 },
-        "motion.heroDrift": true,
-        "player.buttonScale": { "min": 0.8, "max": 1.4 },
-        "player.playButtonScale": { "min": 0.8, "max": 1.6 },
-        "player.seekBarScale": { "min": 0.8, "max": 2 },
-        "player.labelScale": { "min": 0.85, "max": 1.3 },
-        "player.buttonShape": true,
+        "colors.accent": { "swatches": ["#2FB67C", "#FF7A1A", "#E5383B", "#F2C94C"] },
+        "shape.cardRadius": { "min": 0, "max": 20 },
         "background": true
       }
     }
