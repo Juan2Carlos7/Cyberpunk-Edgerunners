@@ -1,104 +1,95 @@
 {
-  "id": "theme-color-pastel",
-  "name": "Color Pastel",
-  "version": "1.2.4",
-  "apiVersion": 18,
+  "id": "theme-naruto-shippuden",
+  "name": "Naruto Shippuden",
+  "version": "1.0.0",
+  "apiVersion": 26,
   "entry": "plugin.js",
-  "icon": "icon.png",
-  "description": "Un tema oscuro con suaves acentos en colores pastel para Kino.",
+  "description": "Tema Naruto Shippuden: naranja, azul noche y logo ninja",
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
     {
-      "id": "color-pastel",
-      "name": { "es": "Color Pastel", "en": "Pastel Color" },
+      "id": "naruto-shippuden",
+      "name": { "es": "Naruto Shippuden", "en": "Naruto Shippuden" },
+      "experience": "full",
       "colors": {
-        "accent": "#FFB7D5",
-        "onAccent": "#3A1020",
-        "background": "#1B1520",
-        "surface": "#261E2E",
-        "surfaceHigh": "#322839",
-        "railPanel": "#211A29",
-        "textPrimary": "#FFF5FA",
-        "textSecondary": "#D9C8DE",
-        "focus": "#B8E8D8",
-        "onFocus": "#10261E",
-        "border": "#C9B6F2"
+        "accent": "#FF7A00",
+        "onAccent": "#000000",
+        "background": "#0A1428",
+        "surface": "#131C2E",
+        "surfaceHigh": "#1C2740",
+        "railPanel": "#0F1830",
+        "textPrimary": "#F5F5F5",
+        "textSecondary": "#B8C0D0",
+        "focus": "#FFB300",
+        "onFocus": "#000000",
+        "outline": "#2A3A5C",
+        "border": "#2B4A8C",
+        "favorite": "#FF7A00"
+      },
+      "background": {
+        "type": "gradient",
+        "colors": ["#0A1428", "#101C3A", "#2B1406"],
+        "angle": 160
       },
       "shape": {
-        "cardRadius": 16,
-        "channelRadius": 16,
-        "buttonRadius": 24,
-        "chipRadius": 20,
-        "dialogRadius": 20,
-        "inputRadius": 12,
-        "cardBorder": 1,
-        "dialogBorder": 2,
-        "headerBorder": 1
+        "cardRadius": 14, "channelRadius": 14, "buttonRadius": 22,
+        "chipRadius": 20, "dialogRadius": 20, "inputRadius": 12,
+        "heroRadius": 20, "railItemRadius": 16,
+        "dialogBorder": 1, "cardBorder": 0, "headerBorder": 1
       },
-      "typography": { "scale": 1.08, "titleScale": 1.05, "bodyScale": 1.0 },
-      "elevation": { "cardShadow": 0.6, "dialogShadow": 0.7, "heroScrim": 0.6 },
+      "typography": { "scale": 1.05, "titleScale": 1.1, "bodyScale": 1.0 },
+      "elevation": { "cardShadow": 0.5, "dialogShadow": 0.7 },
       "motion": { "focusZoom": 1.08, "crossfadeMs": 300, "heroDrift": "on" },
-      "player": {
-        "buttonScale": 1.1,
-        "playButtonScale": 1.2,
-        "seekBarScale": 1.1,
-        "labelScale": 1.0,
-        "buttonShape": "circle"
+      "player": { "buttonScale": 1.1, "playButtonScale": 1.3, "seekBarScale": 1.3, "buttonShape": "circle" },
+      "style": { "gloss": 0.4 },
+      "layout": { "hero": "framed", "rail": "floating" },
+      "surfaces": {
+        "button": {
+          "fill": { "type": "gradient", "colors": ["#FFA024", "#E85D00"], "angle": 180 },
+          "stroke": { "width": 1, "color": "#FFC570" }
+        },
+        "navActive": {
+          "fill": { "type": "gradient", "colors": ["#FF9A1F", "#E85D00"], "angle": 180 },
+          "glow": { "color": "#FF7A00", "radius": 10, "alpha": 0.55 }
+        },
+        "cardFocus": {
+          "stroke": { "width": 2, "color": "#FFB300" },
+          "glow": { "color": "#FF7A00", "radius": 14, "alpha": 0.5 }
+        },
+        "card": { "glow": { "color": "#2B4A8C", "radius": 8, "alpha": 0.25 } },
+        "hero": { "stroke": { "width": 1.5, "color": "#FF7A00" }, "glow": { "color": "#FF7A00", "radius": 12, "alpha": 0.3 } },
+        "rail": { "stroke": { "width": 1, "color": "#2B4A8C" } },
+        "progress": { "fill": { "type": "gradient", "colors": ["#FFB300", "#FF7A00"], "angle": 0 } }
       },
-      "tv": { "typography": { "scale": 1.0 } },
-      "adjustable": {
-        "colors.accent": { "swatches": ["#FFB7D5", "#B8E8D8", "#C9B6F2", "#FFD8A8", "#A8D8F8", "#FFF3A8"] },
-        "colors.onAccent": { "swatches": ["#3A1020", "#FFFFFF", "#000000"] },
-        "colors.background": { "swatches": ["#1B1520", "#14181F", "#000000"] },
-        "colors.surface": { "swatches": ["#261E2E", "#1E2630", "#181818"] },
-        "colors.surfaceHigh": { "swatches": ["#322839", "#2A3440", "#242424"] },
-        "colors.textPrimary": { "swatches": ["#FFF5FA", "#FFFFFF", "#F5F5F5"] },
-        "colors.textSecondary": { "swatches": ["#D9C8DE", "#C8D8E8", "#B3B3B3"] },
-        "colors.focus": { "swatches": ["#B8E8D8", "#FFFFFF", "#FFD8A8"] },
-        "colors.border": { "swatches": ["#C9B6F2", "#FFB7D5", "#000000"] },
-        "shape.cardRadius": { "min": 0, "max": 32 },
-        "shape.channelRadius": { "min": 0, "max": 32 },
-        "shape.buttonRadius": { "min": 0, "max": 32 },
-        "shape.chipRadius": { "min": 0, "max": 32 },
-        "shape.dialogRadius": { "min": 0, "max": 32 },
-        "shape.inputRadius": { "min": 0, "max": 32 },
-        "shape.cardBorder": { "min": 0, "max": 4 },
-        "shape.dialogBorder": { "min": 0, "max": 4 },
-        "shape.headerBorder": { "min": 0, "max": 4 },
-        "typography.scale": { "min": 0.85, "max": 1.3 },
-        "typography.titleScale": { "min": 0.85, "max": 1.3 },
-        "typography.bodyScale": { "min": 0.85, "max": 1.3 },
-        "elevation.cardShadow": { "min": 0, "max": 1 },
-        "elevation.dialogShadow": { "min": 0, "max": 1 },
-        "elevation.heroScrim": { "min": 0.3, "max": 1 },
-        "motion.focusZoom": { "min": 1, "max": 1.15 },
-        "motion.crossfadeMs": { "min": 0, "max": 800 },
-        "player.buttonScale": { "min": 0.8, "max": 1.4 },
-        "player.playButtonScale": { "min": 0.8, "max": 1.6 },
-        "player.seekBarScale": { "min": 0.8, "max": 2 },
-        "player.labelScale": { "min": 0.85, "max": 1.3 },
-        "background": true
-      },
-      "experience": "full",
       "logo": {
         "wordmark": {
-          "size": [220, 30],
+          "size": [120, 30],
           "paths": [
-            { "d": "M15 28 C2 18 0 8 8 3 C12 1 15 4 15 6 C15 4 18 1 22 3 C30 8 28 18 15 28 Z", "fill": "accent" },
-            { "d": "M42 6 H54 V24 H42 Z", "fill": "#B8E8D8" },
-            { "d": "M60 6 H72 V24 H60 Z", "fill": "#C9B6F2" },
-            { "d": "M78 6 H90 V24 H78 Z", "fill": "#FFD8A8" },
-            { "d": "M104 12 H212 V16 H104 Z", "fill": "textPrimary" },
-            { "d": "M104 22 H170 V26 H104 Z", "fill": "textSecondary" }
+            { "d": "M15 0 A15 15 0 1 1 14.99 0 Z", "fill": "accent" },
+            { "d": "M15 4.5 A10.5 10.5 0 1 1 14.99 4.5 Z", "fill": "#0A1428" },
+            { "d": "M15 8 A7 7 0 1 1 14.99 8 Z", "fill": "accent" },
+            { "d": "M9 18 Q15 6 23 10 Q17 12 9 18 Z", "fill": "#0A1428" },
+            { "d": "M40 4 H110 L104 12 H40 Z", "fill": "accent" },
+            { "d": "M40 18 H96 L90 26 H40 Z", "fill": "textPrimary" },
+            { "d": "M98 18 H116 L110 26 H92 Z", "fill": "#2B4A8C" }
           ]
         },
         "mark": {
           "size": [30, 30],
           "paths": [
-            { "d": "M15 28 C2 18 0 8 8 3 C12 1 15 4 15 6 C15 4 18 1 22 3 C30 8 28 18 15 28 Z", "fill": "accent" }
+            { "d": "M15 0 A15 15 0 1 1 14.99 0 Z", "fill": "accent" },
+            { "d": "M15 4.5 A10.5 10.5 0 1 1 14.99 4.5 Z", "fill": "#0A1428" },
+            { "d": "M15 8 A7 7 0 1 1 14.99 8 Z", "fill": "accent" },
+            { "d": "M9 18 Q15 6 23 10 Q17 12 9 18 Z", "fill": "#0A1428" }
           ]
         }
+      },
+      "adjustable": {
+        "colors.accent": { "swatches": ["#FF7A00", "#FFB300", "#2B7BFF", "#E5192E"] },
+        "shape.cardRadius": { "min": 0, "max": 24 },
+        "typography.scale": { "min": 0.95, "max": 1.25 },
+        "background": true
       }
     }
   ]
