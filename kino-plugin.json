@@ -1,196 +1,109 @@
 {
-  "id": "theme-demon-slayer",
-  "name": "Demon Slayer",
-  "version": "1.1.0",
-  "apiVersion": 26,
+  "id": "theme-sexy",
+  "name": "Color Pastel",
+  "version": "1.2.0",
+  "apiVersion": 18,
   "entry": "plugin.js",
-  "description": "Temas Demon Slayer: Tanjiro, Nezuko y Zenitsu",
+  "icon": "icon.png",
+  "description": "Un tema oscuro con suaves acentos en colores pastel para Kino.",
   "hosts": [],
   "categories": ["themes"],
   "appThemes": [
     {
-      "id": "tanjiro",
-      "name": { "es": "Demon Slayer · Tanjiro", "en": "Demon Slayer · Tanjiro" },
-      "experience": "full",
+      "id": "sexy",
+      "name": { "es": "Color Pastel", "en": "Pastel Color" },
       "colors": {
-        "accent": "#2FB67C", "onAccent": "#04140D",
-        "background": "#070D0B", "surface": "#0F1A16",
-        "surfaceHigh": "#16271F", "railPanel": "#0B1411",
-        "focus": "#FF7A1A", "onFocus": "#000000",
-        "border": "#1F5A41", "favorite": "#FF5A1F"
+        "accent": "#FFB7D5",
+        "onAccent": "#3A1020",
+        "background": "#1B1520",
+        "surface": "#261E2E",
+        "surfaceHigh": "#322839",
+        "railPanel": "#211A29",
+        "textPrimary": "#FFF5FA",
+        "textSecondary": "#D9C8DE",
+        "focus": "#B8E8D8",
+        "onFocus": "#10261E",
+        "border": "#C9B6F2"
       },
-      "background": { "type": "gradient", "colors": ["#070D0B", "#14090A"], "angle": 160 },
+      "background": { "type": "gradient", "colors": ["#1B1520", "#231A33"], "angle": 180 },
+      "price": {
+        "kinos": 10,
+        "payTo": "8b97f0011f9d4594d269edc4afb3a0ee10e394abf54b0a40d90ca83f8f7d6a0e"
+      },
       "shape": {
-        "cardRadius": 10, "channelRadius": 10, "buttonRadius": 12,
-        "chipRadius": 8, "dialogRadius": 14, "inputRadius": 8,
-        "cardBorder": 1, "dialogBorder": 2, "headerBorder": 1,
-        "heroRadius": 18, "railItemRadius": 10
+        "cardRadius": 16,
+        "channelRadius": 16,
+        "buttonRadius": 24,
+        "chipRadius": 20,
+        "dialogRadius": 20,
+        "inputRadius": 12,
+        "cardBorder": 1,
+        "dialogBorder": 2,
+        "headerBorder": 1
       },
-      "typography": { "scale": 1.0, "titleScale": 1.1, "bodyScale": 1.0 },
-      "elevation": { "cardShadow": 0.5, "dialogShadow": 0.8, "heroScrim": 0.75 },
+      "typography": { "scale": 1.08, "titleScale": 1.05, "bodyScale": 1.0 },
+      "elevation": { "cardShadow": 0.6, "dialogShadow": 0.7, "heroScrim": 0.6 },
       "motion": { "focusZoom": 1.08, "crossfadeMs": 300, "heroDrift": "on" },
-      "player": { "buttonScale": 1.1, "playButtonScale": 1.3, "seekBarScale": 1.4, "buttonShape": "rounded" },
-      "style": { "gloss": 0.3 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": {
-          "fill": { "type": "gradient", "colors": ["#3BD594", "#1E8A5C"], "angle": 180 },
-          "stroke": { "width": 1, "color": "#8CF0C4" }
-        },
-        "buttonGhost": { "stroke": { "width": 1, "color": "#1F5A41" } },
-        "navActive": {
-          "fill": { "type": "solid", "color": "#0F2A1F" },
-          "stroke": { "width": 1.5, "color": "#FF7A1A" },
-          "glow": { "color": "#FF7A1A", "radius": 10, "alpha": 0.5 }
-        },
-        "rail": { "stroke": { "width": 1, "color": "#1F5A41" } },
-        "iconButton": { "stroke": { "width": 1, "color": "#2FB67C" } },
-        "cardFocus": {
-          "stroke": { "width": 2, "gradient": { "type": "gradient", "colors": ["#FF7A1A", "#FFD27A"], "angle": 90 } },
-          "glow": { "color": "#FF5A1F", "radius": 14, "alpha": 0.5 }
-        },
-        "card": { "glow": { "color": "#2FB67C", "radius": 8, "alpha": 0.18 } },
-        "focus": { "stroke": { "width": 2, "color": "#FF7A1A" }, "glow": { "color": "#FF5A1F", "radius": 8, "alpha": 0.4 } },
-        "hero": {
-          "stroke": { "width": 1.5, "color": "#2FB67C" },
-          "glow": { "color": "#2FB67C", "radius": 16, "alpha": 0.3 }
-        },
-        "progress": { "fill": { "type": "gradient", "colors": ["#FF5A1F", "#FFB347"], "angle": 0 } }
+      "player": {
+        "buttonScale": 1.1,
+        "playButtonScale": 1.2,
+        "seekBarScale": 1.1,
+        "labelScale": 1.0,
+        "buttonShape": "circle"
       },
+      "tv": { "typography": { "scale": 1.0 } },
+      "adjustable": {
+        "colors.accent": { "swatches": ["#FFB7D5", "#B8E8D8", "#C9B6F2", "#FFD8A8", "#A8D8F8", "#FFF3A8"] },
+        "colors.onAccent": { "swatches": ["#3A1020", "#FFFFFF", "#000000"] },
+        "colors.background": { "swatches": ["#1B1520", "#14181F", "#000000"] },
+        "colors.surface": { "swatches": ["#261E2E", "#1E2630", "#181818"] },
+        "colors.surfaceHigh": { "swatches": ["#322839", "#2A3440", "#242424"] },
+        "colors.textPrimary": { "swatches": ["#FFF5FA", "#FFFFFF", "#F5F5F5"] },
+        "colors.textSecondary": { "swatches": ["#D9C8DE", "#C8D8E8", "#B3B3B3"] },
+        "colors.focus": { "swatches": ["#B8E8D8", "#FFFFFF", "#FFD8A8"] },
+        "colors.border": { "swatches": ["#C9B6F2", "#FFB7D5", "#000000"] },
+        "shape.cardRadius": { "min": 0, "max": 32 },
+        "shape.channelRadius": { "min": 0, "max": 32 },
+        "shape.buttonRadius": { "min": 0, "max": 32 },
+        "shape.chipRadius": { "min": 0, "max": 32 },
+        "shape.dialogRadius": { "min": 0, "max": 32 },
+        "shape.inputRadius": { "min": 0, "max": 32 },
+        "shape.cardBorder": { "min": 0, "max": 4 },
+        "shape.dialogBorder": { "min": 0, "max": 4 },
+        "shape.headerBorder": { "min": 0, "max": 4 },
+        "typography.scale": { "min": 0.85, "max": 1.3 },
+        "typography.titleScale": { "min": 0.85, "max": 1.3 },
+        "typography.bodyScale": { "min": 0.85, "max": 1.3 },
+        "elevation.cardShadow": { "min": 0, "max": 1 },
+        "elevation.dialogShadow": { "min": 0, "max": 1 },
+        "elevation.heroScrim": { "min": 0.3, "max": 1 },
+        "motion.focusZoom": { "min": 1, "max": 1.15 },
+        "motion.crossfadeMs": { "min": 0, "max": 800 },
+        "player.buttonScale": { "min": 0.8, "max": 1.4 },
+        "player.playButtonScale": { "min": 0.8, "max": 1.6 },
+        "player.seekBarScale": { "min": 0.8, "max": 2 },
+        "player.labelScale": { "min": 0.85, "max": 1.3 },
+        "background": true
+      },
+      "experience": "full",
       "logo": {
         "wordmark": {
-          "size": [272, 72],
+          "size": [220, 30],
           "paths": [
-            {
-              "d": "M2 8 H12 L10 52 H0 Z M36 6 H48 L18 32 L11 24 Z M17 30 L26 26 L50 54 H36 Z M58 6 H69 L65 54 H55 Z M76 8 H87 L85 52 H74 Z M87 8 H98 L116 52 H105 Z M106 6 H117 L115 54 H104 Z M182 8 H224 L222 18 H182 Z M197 18 H208 L206 54 H196 Z M230 6 H242 L250 40 L258 6 H270 L254 54 H246 Z",
-              "fill": "textPrimary"
-            },
-            {
-              "d": "M126 22 L137 8 H157 L168 22 V40 L157 54 H137 L126 40 Z M137 24 V38 H157 V24 Z",
-              "fill": "accent"
-            },
-            {
-              "d": "M147 25 C139 31 141 38 147 38 C153 38 155 31 147 25 Z",
-              "fill": "#FF7A1A"
-            },
-            {
-              "d": "M172 4 L176 14 L168 14 Z M120 2 L123 9 L117 9 Z M262 -0 L265 4 L259 4 Z M186 0 L189 6 L183 6 Z",
-              "fill": "#FF5A1F"
-            },
-            {
-              "d": "M0 60 H8 V66 H0 Z M16 60 H24 V66 H16 Z M32 60 H40 V66 H32 Z M48 60 H56 V66 H48 Z M64 60 H72 V66 H64 Z M80 60 H88 V66 H80 Z M96 60 H104 V66 H96 Z M112 60 H120 V66 H112 Z M128 60 H136 V66 H128 Z M144 60 H152 V66 H144 Z M160 60 H168 V66 H160 Z M176 60 H184 V66 H176 Z M192 60 H200 V66 H192 Z M208 60 H216 V66 H208 Z M224 60 H232 V66 H224 Z M240 60 H248 V66 H240 Z M256 60 H264 V66 H256 Z",
-              "fill": "accent"
-            },
-            {
-              "d": "M8 60 H16 V66 H8 Z M24 60 H32 V66 H24 Z M40 60 H48 V66 H40 Z M56 60 H64 V66 H56 Z M72 60 H80 V66 H72 Z M88 60 H96 V66 H88 Z M104 60 H112 V66 H104 Z M120 60 H128 V66 H120 Z M136 60 H144 V66 H136 Z M152 60 H160 V66 H152 Z M168 60 H176 V66 H168 Z M184 60 H192 V66 H184 Z M200 60 H208 V66 H200 Z M216 60 H224 V66 H216 Z M232 60 H240 V66 H232 Z M248 60 H256 V66 H248 Z M264 60 H272 V66 H264 Z",
-              "fill": "#0F3D2B"
-            },
-            {
-              "d": "M0 56 L272 53 L272 55 L0 58 Z",
-              "fill": "textSecondary"
-            }
+            { "d": "M15 28 C2 18 0 8 8 3 C12 1 15 4 15 6 C15 4 18 1 22 3 C30 8 28 18 15 28 Z", "fill": "accent" },
+            { "d": "M42 6 H54 V24 H42 Z", "fill": "#B8E8D8" },
+            { "d": "M60 6 H72 V24 H60 Z", "fill": "#C9B6F2" },
+            { "d": "M78 6 H90 V24 H78 Z", "fill": "#FFD8A8" },
+            { "d": "M104 12 H212 V16 H104 Z", "fill": "textPrimary" },
+            { "d": "M104 22 H170 V26 H104 Z", "fill": "textSecondary" }
           ]
         },
         "mark": {
-          "size": [40, 40],
+          "size": [30, 30],
           "paths": [
-            { "d": "M0 0 H20 V20 H0 Z", "fill": "accent" },
-            { "d": "M20 20 H40 V40 H20 Z", "fill": "accent" },
-            { "d": "M20 0 H40 V20 H20 Z", "fill": "#0F3D2B" },
-            { "d": "M0 20 H20 V40 H0 Z", "fill": "#0F3D2B" },
-            { "d": "M20 8 C12 14 14 22 20 32 C26 22 28 14 20 8 Z", "fill": "#FF7A1A" }
+            { "d": "M15 28 C2 18 0 8 8 3 C12 1 15 4 15 6 C15 4 18 1 22 3 C30 8 28 18 15 28 Z", "fill": "accent" }
           ]
         }
-      },
-      "adjustable": {
-        "colors.accent": { "swatches": ["#2FB67C", "#FF7A1A", "#E5383B", "#F2C94C"] },
-        "shape.cardRadius": { "min": 0, "max": 20 },
-        "background": true
-      }
-    },
-    {
-      "id": "nezuko",
-      "name": { "es": "Demon Slayer · Nezuko", "en": "Demon Slayer · Nezuko" },
-      "experience": "full",
-      "colors": {
-        "accent": "#FF7EB6", "onAccent": "#1A0510",
-        "background": "#120709", "surface": "#1F0E13",
-        "surfaceHigh": "#2B141C", "railPanel": "#180A0F",
-        "focus": "#7FD99A", "onFocus": "#000000",
-        "border": "#7A2D49", "favorite": "#FF7EB6"
-      },
-      "background": { "type": "gradient", "colors": ["#120709", "#07120D"], "angle": 160 },
-      "shape": { "cardRadius": 16, "buttonRadius": 20, "chipRadius": 16, "dialogRadius": 20, "heroRadius": 22, "railItemRadius": 14, "cardBorder": 1 },
-      "style": { "gloss": 0.25 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": { "fill": { "type": "gradient", "colors": ["#FF9CC8", "#E0508F"], "angle": 180 } },
-        "navActive": {
-          "fill": { "type": "solid", "color": "#2B141C" },
-          "stroke": { "width": 1.5, "color": "#FF7EB6" },
-          "glow": { "color": "#FF7EB6", "radius": 10, "alpha": 0.45 }
-        },
-        "cardFocus": {
-          "stroke": { "width": 2, "color": "#7FD99A" },
-          "glow": { "color": "#FF7EB6", "radius": 14, "alpha": 0.45 }
-        },
-        "progress": { "fill": { "type": "gradient", "colors": ["#FF7EB6", "#7FD99A"], "angle": 0 } }
-      },
-      "logo": {
-        "mark": {
-          "size": [40, 40],
-          "paths": [
-            { "d": "M2 13 H38 V27 H2 Z", "fill": "#7FD99A" },
-            { "d": "M12 11 H16 V29 H12 Z M24 11 H28 V29 H24 Z", "fill": "#2E7D4F" },
-            { "d": "M30 27 L38 38 L33 38 L27 30 Z", "fill": "accent" }
-          ]
-        }
-      },
-      "adjustable": {
-        "colors.accent": { "swatches": ["#FF7EB6", "#7FD99A", "#FFB347"] },
-        "background": true
-      }
-    },
-    {
-      "id": "zenitsu",
-      "name": { "es": "Demon Slayer · Zenitsu", "en": "Demon Slayer · Zenitsu" },
-      "experience": "full",
-      "colors": {
-        "accent": "#FFD23F", "onAccent": "#1A1400",
-        "background": "#0E0B03", "surface": "#1A1506",
-        "surfaceHigh": "#262009", "railPanel": "#130F04",
-        "focus": "#FFFFFF", "onFocus": "#000000",
-        "border": "#6B5A12", "favorite": "#FF8A1F"
-      },
-      "background": { "type": "gradient", "colors": ["#0E0B03", "#1A0A00"], "angle": 160 },
-      "shape": { "cardRadius": 6, "buttonRadius": 8, "chipRadius": 6, "dialogRadius": 10, "heroRadius": 12, "railItemRadius": 8, "cardBorder": 1 },
-      "motion": { "focusZoom": 1.1, "crossfadeMs": 200 },
-      "style": { "gloss": 0.3 },
-      "layout": { "hero": "framed", "rail": "floating" },
-      "surfaces": {
-        "button": { "fill": { "type": "gradient", "colors": ["#FFE066", "#E0A800"], "angle": 180 } },
-        "navActive": {
-          "fill": { "type": "solid", "color": "#262009" },
-          "stroke": { "width": 1.5, "color": "#FFD23F" },
-          "glow": { "color": "#FFD23F", "radius": 12, "alpha": 0.55 }
-        },
-        "cardFocus": {
-          "stroke": { "width": 2, "color": "#FFFFFF" },
-          "glow": { "color": "#FFD23F", "radius": 16, "alpha": 0.6 }
-        },
-        "progress": { "fill": { "type": "gradient", "colors": ["#FF8A1F", "#FFE066"], "angle": 0 } }
-      },
-      "logo": {
-        "mark": {
-          "size": [40, 40],
-          "paths": [
-            { "d": "M26 0 L8 22 H18 L14 40 L32 16 H22 Z", "fill": "accent" }
-          ]
-        }
-      },
-      "adjustable": {
-        "colors.accent": { "swatches": ["#FFD23F", "#FF8A1F", "#FFFFFF"] },
-        "background": true
       }
     }
   ]
